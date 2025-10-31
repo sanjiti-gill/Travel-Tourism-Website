@@ -1,0 +1,775 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Responsive Tour and Travel Agency Website degine</title>
+    <link rel="icon" href="/public-travel-logo.jpg" type="image/jpeg">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Header Section Starts -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>T</span>r<span>A</span>v<span>E</span>l</a>
+        <nav class="navbar">
+            <a href="#home">Home </a>
+            <a href="#services">Services</a>
+            <a href="#about">About</a>
+            <a href="#packages">Packages</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+            <a href="#search"><i class="fas fa-search" id="search-btn"></i></a>
+            <a href="#login"><i class="fas fa-user" id="login-btn"></i></a>
+            <!-- Right-side hamburger for navigation -->
+            <button class="hamburger-right" aria-label="Open navigation"><i class="fas fa-bars"></i></button>
+        </div>
+
+        <!-- Search Bar Container moved inside header so header .search-bar-container CSS applies -->
+        <div class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="Search here...">
+            <label for="search-bar"><i class="fas fa-search"></i></label>
+        </div>
+    </header>
+
+    <!-- Drawer nav (keeps header nav visible while providing a left drawer) -->
+    <nav class="navbar-drawer" aria-label="drawer navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#review">Review</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <!-- Overlay used to dim and close navbar drawer -->
+    <div class="nav-overlay" aria-hidden="true"></div>
+    <!-- Login Form Container -->
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+        <form action="">
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email" required>
+            <input type="password" class="box" placeholder="Enter your password" required>
+            <input type="submit" value="Login Now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">Remember me</label>
+            <p>Forgot password? <a href="#">Click here</a></p>
+            <p>Don't have an account? <a href="#">Register now</a></p>
+        </form>
+    </div>
+    <!-- Home Section Starts -->
+    <section class="home" id="home">
+        <div class="content">
+            <h3>Adventure is Worthwhile</h3>
+            <p>Discover new places with us, adventure awaits</p>
+            <a href="#" class="btn" id="discoverbtn">Discover More</a>
+        </div>
+        <div class="controls">
+            <span class="vid-btn" data-src="./src/assets/video/video-1.mp4"></span>
+            <span class="vid-btn" data-src="./src/assets/video/video-2.mp4"></span>
+            <span class="vid-btn" data-src="./src/assets/video/video-3.mp4"></span>
+            <span class="vid-btn" data-src="./src/assets/video/video-4.mp4"></span>
+            <span class="vid-btn" data-src="./src/assets/video/video-5.mp4"></span>
+            <span class="vid-btn" data-src="./src/assets/video/video-6.mp4"></span>
+        </div>
+        <div class="video-container">
+            <video src="./src/assets/video/video-2.mp4" id="video-slider" loop autoplay muted></video>
+            
+            <button class="video-nav video-prev" aria-label="Previous video">&#10094;</button>
+            <button class="video-nav video-next" aria-label="Next video">&#10095;</button>
+        </div>
+
+        
+    </section>
+    <!-- Book Section Starts -->
+    <section class="book" id="book">
+        <h1 class="heading">
+            <span>b</span><span>o</span><span>o</span><span>k</span>
+            <span class="space"></span>
+            <span>n</span><span>o</span><span>w</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./src/assets/images/book-img.jpg" alt="Booking illustration">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <h3>Where to</h3>
+                    <input type="text" placeholder="Place name" required>
+                </div>
+                <div class="inputBox">
+                    <h3>How many</h3>
+                    <input type="number" placeholder="Number of guests" min="1" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Arrivals</h3>
+                    <input type="date" required>
+                </div>
+                <div class="inputBox">
+                    <h3>Leaving</h3>
+                    <input type="date" required>
+                </div>
+                <input type="submit" class="btn" value="Book Now">
+            </form>
+        </div>
+    </section>
+    
+    <!-- Packages Section Starts -->
+    <section class="packages" id="packages">
+        <h1 class="heading">
+            <span>p</span><span>a</span><span>c</span><span>k</span><span>a</span><span>g</span><span>e</span><span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./src/assets/images/nepal-pakages-1.jpg" alt="Nepal package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Nepal</h3>
+                    <p>Nepal is a beautiful country located in South Asia, known for its Himalayan mountains, including Mount Everest, and its rich culture and heritage.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+                <div class="price">$200.00 <span>$350.00</span></div>
+                <a href="#" class="btn">Book Now</a>
+            </div>
+        </div> 
+            <div class="box">
+                <img src="./src/assets/images/mumbai-pakages-2.jpg" alt="Mumbai package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Mumbai</h3>
+                    <p>Mumbai is the financial capital of India, famous for its vibrant nightlife, Bollywood film industry, beautiful marine drive, and historic landmarks like the Gateway of India</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$150.00 <span>$200.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/hawail-pakages-3.jpeg" alt="Hawaii package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Hawaii</h3>
+                    <p>Hawaii is a stunning tropical paradise in the Pacific Ocean, known for its golden beaches, volcanic mountains, crystal-clear waters, and vibrant island culture. </p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$190.00 <span>$281.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/sydney-pakages-4.webp" alt="Sydney package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Sydney</h3>
+                    <p>Sydney is a lively Australian city famous for the Opera House, stunning harbor, beaches, and vibrant culture.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$206.00 <span>$285.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/Paris-pakages-5.webp" alt="Paris package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Paris</h3>
+                    <p>Paris is the city of love, renowned for the Eiffel Tower, art museums, charming streets, and exquisite cuisine.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$250.00 <span>$340.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/Tokyo-pakages-6.jpg" alt="Tokyo package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Tokyo</h3>
+                    <p>Tokyo is Japans bustling capital, known for modern skyscrapers, historic temples, unique culture, and amazing food.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$402.00 <span>$490.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/Egypt-pakages-7.jpg" alt="Egypt package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Egypt</h3>
+                     <p>Egypt is famous for ancient pyramids, the Nile River, historic temples, and rich archaeological treasures.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$210.00 <span>$290.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/London-packages-8.jpg" alt="London package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> London</h3>
+                    <p>London is the UKs iconic city,home to Big Ben, Buckingham Palace, historic streets, and vibrant culture.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$380.00 <span>$450.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/delhi-packages-9.jpg" alt="Delhi package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Delhi</h3>
+                    <p>Delhi, India's capital, is known for historic monuments, bustling markets, street food, and rich heritage.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$190.00 <span>$230.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/Goa-packages-10.jpg" alt="Goa package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Goa</h3>
+                    <p>Goa is India’s beach paradise, famous for golden sands, nightlife, Portuguese heritage, and water sports.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$195.00 <span>$290.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/canada-packages-11.jpg" alt="Canada package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Canada</h3>
+                    <p>Canada is known for vast natural landscapes, mountains, lakes, friendly cities, and outdoor adventures.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </div>
+                    <div class="price">$520.00 <span>$680.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/Austrlia-packages-12.jpg" alt="Australia package">
+                <div class="content">
+                    <h3><i class="fas fa-map-marker-alt"></i> Australia</h3>
+                    <p>Australia is a diverse country with beaches, deserts, unique wildlife, and exciting cities like Sydney and Melbourne.</p>
+
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">$320.00 <span>$400.00</span></div>
+                    <a href="#" class="btn">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section Starts -->
+    <section class="services" id="services">
+        <h1 class="heading">
+            <span>s</span><span>e</span><span>r</span><span>v</span><span>i</span><span>c</span><span>e</span><span>s</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-hotel"></i>
+                <h3>Affordable Hotels</h3>
+                <p>Stay in comfortable, budget-friendly hotels with all essential amenities.Find cozy rooms, friendly service, and convenient locations without breaking the bank.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-utensils"></i>
+                <h3>Food and Drinks</h3>
+                <p>Enjoy delicious meals, local cuisine, and refreshing beverages during your trip.Savor authentic flavors and discover unique dishes that reflect the culture of each destination.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-bullhorn"></i>
+                <h3>Safety Guide</h3>
+                <p>Get expert safety tips and guidance to travel securely and confidently.Learn how to stay alert, avoid common risks, and protect your belongings on the go.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-globe-asia"></i>
+                <h3>Around the World</h3>
+                <p>Explore popular destinations and experience cultures across the globe.Discover breathtaking landmarks, hidden gems, and unforgettable experiences everywhere you travel.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-plane"></i>
+                <h3>Fastest Travel</h3>
+                <p>Reach your destinations quickly with our optimized travel plans.Save time and energy with the most efficient routes, transport options, and travel hacks.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-hiking"></i>
+                <h3>Adventures</h3>
+                <p>Embark on exciting adventures like trekking, hiking, and water sports.Challenge yourself, embrace nature, and create memories that last a lifetime.</p>
+            </div>
+        </div>
+    </section>
+    <!-- Gallery Section Starts -->
+    <section class="gallery" id="gallery">
+        <h1 class="heading">
+            <span>g</span><span>a</span><span>l</span><span>l</span><span>e</span><span>r</span><span>y</span>
+        </h1>
+        <div class="box-container">
+            <div class="box">
+                <img src="./src/assets/images/gallery-1.avif" alt="Amazing place 1">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Experience breathtaking viewpoints and lush landscapes.Relax and soak in the beauty of nature at its finest.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-2.jpg" alt="Amazing place 2">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Sail across serene waters and discover hidden beaches.Enjoy peaceful moments surrounded by turquoise waters and cliffs.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gellery-3.jpg" alt="Amazing place 3">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Step back in time and explore historic landmarks.Marvel at ancient architecture and cultural heritage</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-4.avif" alt="Amazing place 4">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Immerse yourself in spiritual and cultural wonders.Discover traditions, rituals, and architectural marvels worldwide.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-5.jpg" alt="Amazing place 5">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Visit iconic monuments recognized around the globe.Capture unforgettable memories at world-famous landmarks</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-6.webp" alt="Amazing place 6">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Embrace adventure and freedom on your journeys.Feel the thrill of exploration and the serenity of nature.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-7.jpg" alt="Amazing place 7">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A beautiful sky filled with colorful hot air balloons floating above soft, fluffy clouds. The sunlight gives the scene a dreamy, adventurous feeling.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-8.webp" alt="Amazing place 8">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Bright orange and green tents are set up on a grassy hillside overlooking a stunning sunset. The view shows the horizon meeting the calm sky and distant mountains.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-9.jpg" alt="Amazing place 9">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>The Great Pyramids standing tall under a clear sky, surrounded by golden sand dunes. The ancient structures glow warmly in the sunlight.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-10.webp" alt="Amazing place 10">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A breathtaking white marble temple shaped like a lotus flower, with its reflection visible in a serene pool of water below a cloudy blue sky.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-11.jpg" alt="Amazing place 11">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>the Boudhanath Stupa in Kathmandu, Nepal, a UNESCO World Heritage Site and an important center of Tibetan Buddhism, known for its massive dome and colorful prayer flags.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-12.jpg" alt="Amazing place 12">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>Japan’s iconic Mount Fuji rises majestically in the background, while pink cherry blossom trees bloom along a peaceful lakeside in the foreground.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-13.webp" alt="Amazing place 13">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A pristine beach with turquoise-blue water, white sand, and tall palm trees leaning toward the sea under a bright, sunny sky.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-14.webp" alt="Amazing place 14">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A luxurious wooden resort built over clear blue ocean water.The calm sea reflects the sky filled with soft white clouds, giving a peaceful vibe.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-15.webp" alt="Amazing place 15">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A peaceful view of the Tal Barahi Temple situated on an island in Phewa Lake, Pokhara. The calm water reflects the temple and surrounding trees, while the snow-covered Annapurna mountains rise majestically in the background under a clear blue sky.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-16.jpg" alt="Amazing place 16">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>The grand Janaki Temple, a stunning example of Mithila architecture, located in Janakpur, Nepal. The palace-like structure is adorned with domes, arches, and intricate carvings. Visitors can be seen walking around the courtyard, admiring the beauty of this sacred Hindu site dedicated to Goddess Sita.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-17.jpg" alt="Amazing place 17">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A crystal-clear blue lake surrounded by towering rocky mountains and pine forests. The calm water beautifully mirrors the peaks and the colorful sunset sky.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-18.jpg" alt="Amazing place 18">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>A lively waterfront scene with people enjoying the view of an iconic bridge and a modern white building with a unique design. The sun is setting, casting a golden glow over the water.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-19.jpg" alt="Amazing place 17">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>🛕Pashupatinath Temple, located on the banks of the Bagmati River in Kathmandu, is a sacred Hindu temple dedicated to Lord Shiva. Known for its golden roof and intricate architecture, it stands as a symbol of Nepal’s rich spiritual and cultural heritage.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-20.jpg" alt="Amazing place 17">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>🛕Manakamana Temple, dedicated to Goddess Bhagwati, sits atop a hill in Gorkha, Nepal. Known as the wish-fulfilling temple, it offers stunning Himalayan views and is reached by a scenic cable car ride.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+            <div class="box">
+                <img src="./src/assets/images/gallery-21.jpg" alt="Amazing place 17">
+                <div class="content">
+                    <h3>Amazing Places</h3>
+                    <p>🛕Muktinath Temple, dedicated to Lord Vishnu, lies in Nepal’s Mustang region. Revered by Hindus and Buddhists, it symbolizes liberation and is famed for its 108 water spouts and eternal flame.</p>
+                    <a href="#" class="btn">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Review Section Starts -->
+    <section class="review" id="review">
+        <h1 class="heading">
+            <span>r</span><span>e</span><span>v</span><span>i</span><span>e</span><span>w</span>
+        </h1>
+        <div class="swiper-container review-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-1.jpg" alt="Reviewer 1">
+                        <h3>Ms.Puspa Shahi</h3>
+                        <p>Nepal is famous for its tall mountains like Mount Everest and beautiful natural views. Visitors can explore old temples, busy markets, and enjoy trekking or other adventures in the Himalayas. The country’s culture and traditions give tourists a peaceful and exciting experience.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-2.jpg" alt="Reviewer 2">
+                        <h3>Mr.Nitesh Shigh Maurya</h3>
+                        <p>India is famous for its rich culture, colorful festivals, and tasty food. Visitors can see the Taj Mahal, Jaipur palaces, Kerala backwaters, Delhi’s monuments, and Goa’s beaches. The country’s mix of history and modern life gives tourists a lively and memorable experience.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-3.jpg" alt="Reviewer 3">
+                        <h3>Ms.Anjana Dhital</h3>
+                        <p>London, the capital of the United Kingdom, is known for famous places like Big Ben, the London Eye, and Buckingham Palace**. Visitors can enjoy museums, theaters, and shopping. The city offers a perfect mix of history, modern life, and entertainment.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-4.jpg" alt="Reviewer 4">
+                        <h3>Mr.Bed Prakash Maurya</h3>
+                        <p>Australia is famous for its beaches, wildlife, and fun activities like surfing and snorkeling. Cities like Sydney and Melbourne offer culture, food, and festivals. Natural wonders like the Great Barrier Reef and Uluru attract travelers from all over the world.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-5.jpg" alt="Reviewer 5">
+                        <h3>Ms.Puja Khadka</h3>
+                        <p>Japan is famous for its beautiful temples, cherry blossoms, and advanced technology. Cities like Tokyo and Kyoto offer a mix of modern life and traditional culture, while landmarks like Mount Fuji and ancient shrines attract visitors from around the world.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./src/assets/images/review-6.jpg" alt="Reviewer 5">
+                        <h3>Mr.Dinesh Maurya</h3>
+                        <p>The USA is famous for its iconic monuments, national parks, and advanced technology. Cities like New York and Washington, D.C. offer a mix of modern life and historical culture, while landmarks like the Grand Canyon and Statue of Liberty attract visitors from around the world.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!--About section starts-->
+    <section class="about" id="about">
+        <h1 class="heading">
+            <span>a</span><span>b</span><span>o</span><span>u</span><span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./src/assets/images/about-img.jpg" alt="About us illustration">
+            </div>
+            <div class="content">
+                <h1>Why Choose About Us?</h1>
+                <p><h2>We are a dedicated and hardworking team committed to delivering the best services and innovative solutions to our clients. Our focus is on excellence, efficiency, and trust. Every project we undertake is driven by our passion to simplify complex tasks, provide meaningful value, and ensure complete customer satisfaction.</h2></p>
+                <p><h2>Our mission is to make everything easy, useful, and reliable for everyone we serve. Through continuous improvement, teamwork, and integrity, we strive to build lasting relationships and contribute positively to the success of our clients and the community.</h2></p>
+                <a href="#" class="btn">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!-- About Section Ends -->
+
+    <!-- Contact Section Starts -->
+    <section class="contact" id="contact">
+        <h1 class="heading">
+            <span>c</span><span>o</span><span>n</span><span>t</span><span>a</span><span>c</span><span>t</span>
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="./src/assets/images/contact-img.jpg" alt="Contact illustration">
+            </div>
+            <form action="">
+                <div class="inputBox">
+                    <input type="text" placeholder="Name" required>
+                    <input type="email" placeholder="Email" required>
+                </div>
+                <div class="inputBox">
+                    <input type="tel" placeholder="Phone number" required>
+                    <input type="text" placeholder="Subject" required>
+                </div>
+                <textarea placeholder="Message" name="message" id="message" cols="30" rows="10" required></textarea>
+                <input type="submit" class="btn" value="Send Message">
+            </form>
+        </div>
+    </section>
+    <!-- Brand Section Starts -->
+    <section class="brand-container" id="brand">
+        <h1 class="heading">
+            <span>b</span><span>r</span><span>a</span><span>n</span><span>d</span>
+        </h1>
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="./src/assets/images/brand-1.jpg" alt="Brand 1 logo"></div>
+                <div class="swiper-slide"><img src="./src/assets/images/brand-2.jpg" alt="Brand 2 logo"></div>
+                <div class="swiper-slide"><img src="./src/assets/images/brand-3.jpg" alt="Brand 3 logo"></div>
+                <div class="swiper-slide"><img src="./src/assets/images/brand-4.jpg" alt="Brand 4 logo"></div>
+                <div class="swiper-slide"><img src="./src/assets/images/brand-5.png" alt="Brand 5 logo"></div>
+                <div class="swiper-slide"><img src="./src/assets/images/brand-6.png" alt="Brand 6 logo"></div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer Section Starts -->
+    <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>About Us</h3>
+                <p>We are a dedicated and hardworking team committed to delivering the best services and innovative solutions to our clients. Our focus is on excellence, efficiency, and trust. Every project we undertake is driven by our passion to simplify complex tasks, provide meaningful value, and ensure customer satisfaction.Our mission is to make everything easy, useful, and reliable for everyone we serve. Through continuous improvement, teamwork, and integrity, we strive to build lasting relationships and contribute positively to the success of our clients and the community.</p>
+            </div>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+            <div class="box">
+                <h3>Branch Locations</h3>
+                <a href="#"><img src="https://flagcdn.com/w20/in.png" alt="India flag"> India</a>
+                <a href="#"><img src="https://flagcdn.com/w20/us.png" alt="USA flag"> USA</a>
+                <a href="#"><img src="https://flagcdn.com/w20/jp.png" alt="Japan flag"> Japan</a>
+                <a href="#"><img src="https://flagcdn.com/w20/fr.png" alt="France flag"> France</a>
+                <a href="#"><img src="https://flagcdn.com/w20/ca.png" alt="Canada flag"> Canada</a>
+                <a href="#"><img src="https://flagcdn.com/w20/au.png" alt="Australia flag"> Australia</a>
+            </div>      
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#home">Home</a>
+                <a href="#book">Book</a>
+                <a href="#packages">Packages</a>
+                <a href="#services">Services</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#review">Review</a>
+                <a href="#contact">Contact</a>
+            </div>
+           
+            
+
+            <!-- Add this in your <head> section once -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+            <div class="box follow-us-box">
+            <h3>Follow Us</h3>
+            <div class="follow-us-inline">
+                <a href="https://www.facebook.com" target="_blank" class="facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span class="social-name">Facebook</span>
+                </a>
+                <a href="https://www.instagram.com" target="_blank" class="instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span class="social-name">Instagram</span>
+                </a>
+                <a href="https://x.com" target="_blank" class="twitter">
+                    <i class="fab fa-x-twitter"></i>
+                    <span class="social-name">Twitter</span>
+                </a>
+                <a href="https://www.linkedin.com" target="_blank" class="linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                    <span class="social-name">LinkedIn</span>
+                </a>
+                <a href="https://www.youtube.com" target="_blank" class="youtube">
+                    <i class="fab fa-youtube"></i>
+                    <span class="social-name">YouTube</span>
+                </a>
+            <!-- Inline contact info (phone + email) -->
+                <div class="footer-contact">
+                    <a href="tel:+91-7822929451" class="phone"><i class="fas fa-phone"></i><span>+91 782 292 9451</span></a>
+                    <a href="mailto:info@example.com" class="email"><i class="fas fa-envelope"></i><span>info@example.com</span></a>
+                </div>
+            </div>
+            </div>
+        
+
+        </div>
+        
+        <h1 class="credit">
+        Created by <span>Mr. Ram Manohar Maurya, Ms.Sanjiti Gill, Ms.Neelakshi Nandan, and Ms.Sejal Jain</span> | All Rights Reserved!</h1>
+
+    </section>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
